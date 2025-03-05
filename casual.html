@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1500">
+    <title>Fashion App</title>
+    <link rel="stylesheet" href="./docs/css/style.css">
+</head>
+    <body>
+        <div class="wrapper">
+            <div class="container">
+                <!-- パレット部分 -->
+                <div class="circle-container">
+                    <div class="hue-circle">
+                        <div class="hue-dot red"><button class="color-1 color-circle"></button></div><!--赤-->
+                        <div class="hue-dot brown"><button class="color-2 color-circle"></button></div><!--茶-->
+                        <div class="hue-dot orange"><button class="color-3 color-circle"></button></div><!--オレンジ-->
+                        <div class="hue-dot beige"><button class="color-4 color-circle"></button></div><!--ベージュ-->
+                        <div class="hue-dot yellow"><button class="color-5 color-circle"></button></div><!--黄-->
+                        <div class="hue-dot green"><button class="color-6 color-circle"></button></div><!--緑-->
+                        <div class="hue-dot blue"><button class="color-7 color-circle"></button></div><!--青-->
+                        <div class="hue-dot purple"><button class="color-8 color-circle"></button></div><!--紫-->
+                        <div class="hue-dot other"><button class="color-9 color-circle"></button></div><!--その他-->
+                        <div class="hue-dot black"><button class="color-10 color-circle"></button></div><!--黒-->
+                        <div class="hue-dot white"><button class="color-11 color-circle"></button></div><!--白-->
+                        <div class="hue-dot pink"><button class="color-12 color-circle"></button></div><!--ピンク-->
+                    </div>
+                </div>
+                <div class="word-circle"><div class="word-content"></div></div>
+
+                <div id="color-name"><div class="select-color-name"></div></div>
+                <div class="color-select">
+                    <div class="colors">
+                        <button id="select-color1" class="select-color"></button>
+                        <button id="select-color2" class="select-color"></button>
+                        <button id="select-color3" class="select-color"></button>
+                        <button id="select-color4" class="select-color"></button>
+                        <button id="select-color5" class="select-color"></button>
+                        <button id="select-color6" class="select-color"></button>
+                    </div>
+                </div>
+
+                <img src="./docs/img/yajirusi.png" alt="yajirusi" class="yajirusi">
+
+                <!-- 右側パレット -->
+
+                <div class="matching-color-palette">
+                    <button id="matching-color1" class="matching-colors"></button>
+                    <button id="matching-color2" class="matching-colors"></button>
+                    <button id="matching-color3" class="matching-colors"></button>
+                    <button id="matching-color4" class="matching-colors"></button>
+                    <button id="matching-color5" class="matching-colors"></button>
+                    <button id="matching-color6" class="matching-colors"></button>
+                </div>
+
+                <!-- 女の子 -->
+
+                <div id="girl">
+
+                    <!-- カラーピッカー -->
+                    
+                    <div class="color-picker-content">
+                        <input type="color" id="colorPicker" value="#ffffff">
+                        <input type="color" id="colorPicker2" value="#ffffff">
+                        <input type="color" id="colorPicker3" value="#ffffff">
+                    </div>
+
+                    <!-- からだ -->
+
+                    <img src="./docs/img/girl.png" alt="girl" class="girl-parts">
+
+                    <!-- シャツ -->
+
+                    <svg class="girl-parts" version="1.0" xmlns="http://www.w3.org/2000/svg"
+                        width="1500.000000pt" height="2669.000000pt" viewBox="0 0 1500.000000 2669.000000"
+                        preserveAspectRatio="xMidYMid meet">
+
+                        <g id="shirt" transform="translate(0.000000,2669.000000) scale(0.100000,-0.100000)"
+                        fill="#FFFFFF" stroke="none">
+                        <path d="M7410 21519 c-104 -9 -284 -45 -326 -65 -17 -8 -70 -55 -118 -104
+                        l-87 -90 -117 0 c-151 0 -327 -17 -361 -34 -85 -44 -296 -288 -349 -404 -21
+                        -46 -23 -62 -17 -110 10 -80 37 -126 124 -212 128 -127 226 -162 389 -140 53
+                        7 112 19 131 26 47 20 117 79 148 125 14 22 28 37 30 35 12 -12 -23 -151 -49
+                        -196 -93 -162 -418 -250 -631 -170 -32 12 -61 19 -64 16 -9 -9 47 -84 86 -115
+                        48 -38 89 -58 134 -66 39 -8 61 -25 30 -25 -10 0 -71 7 -136 14 -143 17 -206
+                        44 -271 117 -48 53 -125 176 -153 246 -10 23 -21 42 -25 40 -4 -1 -61 -83
+                        -127 -182 -67 -99 -153 -220 -192 -270 -93 -118 -202 -282 -246 -370 -36 -71
+                        -88 -162 -130 -226 -32 -49 -29 -77 12 -123 19 -22 35 -44 35 -49 0 -28 175
+                        -232 354 -415 179 -182 227 -219 642 -487 l71 -46 17 -112 c27 -171 81 -424
+                        136 -643 27 -109 50 -208 50 -220 0 -34 53 -89 113 -118 83 -40 172 -50 302
+                        -32 60 8 189 17 285 21 290 9 470 30 555 62 34 13 119 15 603 14 754 -1 829 9
+                        866 112 22 63 32 116 81 432 85 541 80 497 61 589 -10 45 -19 88 -22 97 -4 14
+                        8 19 63 29 145 25 300 75 603 196 336 135 500 212 645 304 49 31 109 67 133
+                        79 25 13 41 27 39 34 -3 7 -25 59 -50 117 -25 58 -70 164 -100 235 -58 137
+                        -167 373 -294 634 -41 86 -100 212 -130 281 -31 69 -68 150 -83 180 -15 30
+                        -56 120 -90 200 -89 208 -165 355 -223 434 -43 58 -61 74 -117 100 l-65 31
+                        -437 3 c-300 2 -438 0 -438 -7 0 -6 28 -25 63 -42 34 -17 73 -39 87 -49 34
+                        -23 183 -85 250 -104 30 -8 96 -27 145 -40 50 -14 128 -45 175 -68 74 -38 89
+                        -50 126 -105 52 -76 61 -129 40 -231 -24 -117 -76 -202 -191 -317 -55 -55
+                        -129 -121 -165 -146 -111 -78 -289 -137 -375 -126 -62 9 -147 43 -212 86 -53
+                        35 -66 39 -143 44 -100 7 -232 46 -275 81 -39 33 -21 33 82 4 157 -45 375 -25
+                        531 49 74 35 163 127 204 211 32 64 33 71 33 182 -1 153 -10 176 -109 276 -75
+                        76 -92 87 -235 158 -85 42 -158 76 -163 76 -4 0 -8 -10 -8 -23 0 -43 -81 -191
+                        -154 -282 -40 -49 -84 -106 -97 -127 -14 -20 -70 -83 -125 -141 l-101 -106
+                        -99 -29 c-54 -16 -120 -32 -145 -36 -60 -9 -109 -50 -158 -134 -22 -37 -71
+                        -105 -110 -152 -39 -47 -80 -102 -91 -122 -11 -21 -24 -38 -29 -38 -4 0 -21
+                        30 -37 68 -15 37 -58 126 -94 197 -76 150 -124 281 -139 380 -19 124 -31 286
+                        -31 426 l0 136 94 7 c51 3 115 13 143 21 121 36 185 127 159 228 -7 30 1 29
+                        -136 16z"/>
+                        <path d="M8260 21476 c0 -14 4 -27 9 -30 4 -3 11 -18 14 -34 6 -27 84 -119 93
+                        -109 3 3 -9 25 -27 50 -17 25 -37 67 -44 94 -14 53 -45 74 -45 29z"/>
+                        <path d="M9300 20369 c-93 -50 -534 -179 -613 -179 -45 0 -28 -21 46 -58 78
+                        -39 152 -50 228 -32 82 18 209 83 268 136 54 49 115 128 109 144 -2 4 -19 0
+                        -38 -11z"/>
+                        </g>
+                    </svg>
+
+
+                    <!-- スカート -->
+
+                    <svg class="girl-parts" version="1.0" xmlns="http://www.w3.org/2000/svg"
+                    width="1500.000000pt" height="2669.000000pt" viewBox="0 0 1500.000000 2669.000000"
+                    preserveAspectRatio="xMidYMid meet">
+
+                    <g id="skirt" transform="translate(0.000000,2669.000000) scale(0.100000,-0.100000)"
+                    fill="#FFFFFF" stroke="none">
+                        <path d="M8965 17255 c-63 -9 -260 -13 -667 -13 -378 0 -583 -4 -596 -11 -56
+                        -30 -286 -57 -572 -66 -96 -4 -225 -13 -287 -21 -154 -21 -255 -6 -346 53 -21
+                        14 -31 15 -45 7 -81 -52 -492 -1108 -653 -1678 -91 -324 -170 -752 -184 -1003
+                        -3 -45 -12 -151 -20 -235 -8 -84 -19 -284 -26 -444 -17 -413 2 -754 72 -1334
+                        11 -91 47 -401 79 -690 33 -289 67 -572 75 -630 8 -58 26 -193 39 -300 14
+                        -107 36 -279 50 -382 27 -193 93 -781 105 -923 4 -44 3 -100 0 -125 -25 -158
+                        -54 -2130 -38 -2550 6 -157 12 -418 13 -580 l2 -295 37 -61 c93 -156 270 -359
+                        382 -439 136 -97 301 -153 419 -142 83 8 171 43 350 139 115 61 296 169 323
+                        192 4 3 23 186 48 476 14 157 39 393 55 525 16 132 45 400 65 595 35 349 49
+                        465 119 945 19 132 42 314 51 405 8 91 21 201 28 245 16 104 15 788 -1 980
+                        -25 295 -32 694 -29 1558 2 488 6 889 9 892 2 2 21 -73 42 -168 56 -253 144
+                        -596 336 -1307 94 -349 207 -777 250 -951 44 -173 107 -414 141 -535 172 -611
+                        246 -932 300 -1299 38 -263 153 -944 215 -1280 20 -104 64 -360 99 -567 l63
+                        -377 36 -32 c65 -57 83 -69 158 -104 227 -108 528 -77 755 76 164 111 363 320
+                        508 534 l67 100 -6 185 c-10 322 -60 822 -121 1206 -25 160 -116 694 -134 789
+                        -42 216 -177 849 -197 925 -15 52 -53 200 -85 329 l-59 235 0 225 c0 268 -14
+                        687 -35 1081 -8 157 -24 467 -35 690 -11 223 -29 527 -40 675 -11 149 -29 389
+                        -40 535 -10 146 -22 319 -25 385 -15 298 -62 815 -100 1095 -66 484 -110 634
+                        -420 1440 -47 124 -113 297 -147 385 -33 88 -90 218 -125 290 -68 136 -103
+                        220 -103 246 0 8 -7 39 -15 67 -12 38 -20 52 -33 51 -9 -1 -57 -7 -107 -14z"/>
+                        </g>
+                    </svg>
+
+                    <!-- 靴 -->
+
+                    <svg class="girl-parts" version="1.0" xmlns="http://www.w3.org/2000/svg"
+                        width="1500.000000pt" height="2669.000000pt" viewBox="0 0 1500.000000 2669.000000"
+                        preserveAspectRatio="xMidYMid meet">
+
+                        <g id="shoes" transform="translate(0.000000,2669.000000) scale(0.100000,-0.100000)"
+                        fill="#FFFFFF" stroke="none">
+                            <path d="M10449 3698 c-20 -41 -54 -101 -193 -341 -68 -119 -115 -202 -214
+                            -384 -96 -175 -218 -352 -300 -436 -77 -79 -221 -172 -305 -199 -119 -37 -294
+                            -20 -395 38 -66 39 -85 85 -81 203 3 70 1 96 -8 96 -25 0 -254 -354 -368 -569
+                            -72 -136 -95 -208 -95 -298 0 -142 27 -183 165 -250 105 -50 171 -58 410 -46
+                            276 13 484 51 604 113 156 79 314 240 414 422 l61 112 43 -6 c29 -4 43 -2 43
+                            6 0 6 6 11 13 11 7 0 69 61 137 137 69 75 164 179 213 231 48 51 89 103 92
+                            115 16 79 30 291 30 457 0 161 -3 206 -18 255 -33 108 -185 375 -214 375 -7 0
+                            -22 -19 -34 -42z"/>
+                            <path d="M6162 2941 c-22 -13 -38 -330 -24 -455 19 -174 90 -383 178 -523 92
+                            -148 246 -282 380 -333 203 -76 486 5 612 174 81 110 107 192 118 381 11 179
+                            -26 655 -53 677 -16 13 -16 14 -47 -147 -45 -235 -148 -394 -307 -476 -78 -40
+                            -142 -50 -234 -38 -144 19 -292 121 -389 269 -54 82 -168 323 -191 405 -20 69
+                            -25 77 -43 66z"/>
+                        </g>
+                        </svg>
+
+                    <!-- アウトライン -->
+                    <img src="./docs/img/casual/shirts-outline.png" alt="shirt-outline" class="girl-parts">
+                    <img src="./docs/img/casual/bottoms-outline.png" alt="skirt-outline" class="girl-parts">
+                    <img src="./docs/img/casual/shoes-outline.png" alt="shoes-outline" class="girl-parts">
+
+                </div>
+
+                <!-- 右下のロゴ -->
+                <div id="logos">
+
+                    <!-- シャツのロゴ -->
+                    <img src="./docs/img/shirts-logo-selected.png" alt="shirts-logo" id="shirts-logo" class="logos-parts" onclick="clickShirtsLogo()">
+
+                    <!-- ボトムスのロゴ -->
+                    <img src="./docs/img/bottoms-logo.png" alt="bottoms-logo" id="bottoms-logo" class="logos-parts" onclick="clickBottomsLogo()">
+                    
+                </div>
+
+                <!-- 靴の色パレット -->
+                <div class="shoes-color-palette">
+                    <button id="shoes-color1" class="shoes-colors" data-color="#4C4948"></button>
+                    <button id="shoes-color2" class="shoes-colors" data-color="#ffffff"></button>
+                    <button id="shoes-color3" class="shoes-colors" data-color="#EEDCB3"></button>
+                </div>
+
+                <!-- チェンジボタン -->
+                <button class="change-button" onclick="changeColor()">
+                    <img src="./docs/img/change.png" alt="change" class="change">
+                </button>
+
+                <!-- 現在の色 -->
+                <div id="current-shirts" class="current"></div>
+                <div id="current-skirts" class="current"></div>
+                <div id="current-shirts-name-content" class="current-color-name-content"><p class="current-color-name" id="current-shirts-name"></p></div>
+                <div id="current-skirts-name-content" class="current-color-name-content"><p class="current-color-name" id="current-skirts-name"></p></div>
+
+                <!-- ホームに戻る画像 -->
+                <button class="home-button" onclick="location.href='./index.html'">
+                    <img src="./docs/img/home.png" alt="home" class="home">
+                </button>
+
+                <div id="center-container">
+                    <div id="sparkle-button">　　　　　　　　　</div>
+                </div>
+                <div id="center-container2">
+                    <div id="sparkle-button2">　　　　　　　　　</div>
+                </div>
+
+                <div id="sparkle-container"></div>
+                <div id="sparkle-container2"></div>
+
+                <audio src="./docs/audio/fashion_main.wav" autoplay loop id="bgm"></audio>
+
+                <div class="audio-button">
+                    <img src="./docs/img/play.png" alt="play-button" id="play-button" onclick="bgmPlayOrPause()"></img>
+                </div>
+            </div>
+        </div>
+
+        <script src="./docs/js/script.js"></script>
+    </body>
+</html>

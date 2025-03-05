@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1500">
+    <title>トップページ</title>
+    <link rel="stylesheet" href="./docs/css/top.css">
+    
+</head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <header class="header">
+          <!-- ヘッダーロゴ -->
+          <div class="logo">ハンバーガーメニュー</div>
+          
+          <!-- ハンバーガーメニュー部分 -->
+          <div class="nav">
+          
+            <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+            <input id="drawer_input" class="drawer_hidden" type="checkbox">
+          
+            <!-- ハンバーガーアイコン -->
+            <label for="drawer_input" class="drawer_open"><span></span></label>
+          
+            <!-- メニュー -->
+            <div class="nav_content">
+              <div id="h-title-area">
+                <h1 id="h-title">Credit</h1>
+              </div>
+              <div class="h-name-area">
+                <div id="k" class="nav_item">
+                  <img src="./docs/img/top/manamun.png" class="manamun icon">
+                  <h4>M・K</h4>
+                  <p>2001.09.29</p>
+                  <p>Project Manager</p>
+                </div>
+                <div id="t" class="nav_item">
+                  <img src="./docs/img/top/tuchi.png" class="tuchi icon">
+                  <h4>Y・T</h4>
+                  <p>2000.12.08</p>
+                  <p>Designer</p>
+                </div>
+              </div>
+              <div class="h-name-area">
+                <div id="m" class="nav_item">
+                  <img src="./docs/img/top/narumin.png" class="narumin icon">
+                  <h4>N・M</h4>
+                  <p>2001.08.06</p>
+                  <p>Main Page Engineer</p>
+                </div>
+                <div id="w" class="nav_item">
+                  <img src="./docs/img/top/nabe.png" class="nabe icon">
+                  <h4>M・W</h4>
+                  <p>2001.10.16</p>
+                  <p>Top Page Engineer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <div class="container2">
+            <div class="arrow" id="left"><img src="./docs/img/top/left.png" alt="left" width="250" height="140" class="left">
+            </div>
+            <div class="circle">
+                <img src="./docs/img/top/fweminine.png" alt="fweminine" width="260" height="480" class="fweminine">
+            </div>
+            <div class="arrow" id="right"><img src="./docs/img/top/right.png" alt="right" width="250" height="140" class="right">
+            </div>
+        </div>
+
+        <div class="tag-container"><img src="./docs/img/top/tag.png" alt="tag" width="200" height="100" class="tag-image">
+          <div id="tag" class="tag-text" alt="tag">fweminine
+          </div>
+        </div>
+
+        <button class="start-button" onclick="location.href='/fweminine.html'">START</button>
+
+        <audio src="./docs/audio/fashion_top.wav" autoplay loop id="bgm"></audio>
+
+        <div class="audio-button">
+          <img src="./docs/img/play.png" alt="play-button" id="play-button" class="hover" onclick="bgmPlayOrPause()"></img>
+        </div>
+      </div>
+    </div>
+
+    <script src="./docs/js/top.js"></script>   
+  </body>
+</html>
