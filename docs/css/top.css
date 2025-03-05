@@ -1,0 +1,267 @@
+/* 全体のボディ設定 */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  /* overflow: hidden; */
+}
+
+.container {
+  width: 1500px;
+  height: 685px;
+  background-color: lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-image: url('../img/top/room2.png');
+  background-size: cover;
+  background-position: center center;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  background-color: white;
+
+  display: flex; /* フレックスボックスを使用して子要素を配置 */
+  flex-direction: column; /* 子要素を縦方向に配置 */
+  align-items: center; /* 子要素を水平中央に配置 */
+  justify-content: center; /* 子要素を垂直中央に配置 */
+  height: 100vh; /* ページの高さを設定（スクロール可能にするため少し高めに設定） */
+  margin: 0px; /* ボディの外側マージンをなくす */
+  padding: 0;
+  background-color: #f8f8f8; /* 背景色を薄い灰色に設定 */
+  font-family: Arial, sans-serif; /* フォントをArialに設定 */
+}
+/* 矢印とサークルを含むコンテナ */
+.container2 {
+  display: flex; /* フレックスボックスを使用して子要素を配置 */
+  align-items: center; /* 子要素を水平中央に配置 */
+  justify-content: center; /* 子要素を垂直中央に配置 */
+  width: 100%; /* コンテナの幅を100pxに設定 */
+  height: 100px; /* コンテナの高さを100pxに設定 */
+  position: absolute;
+}
+
+.fashion {
+  margin: 0;
+}
+
+/* 矢印のスタイル */
+.arrow {
+  font-size: 0rem; /* フォントサイズをゼロに設定して矢印を非表示にする */
+  cursor: pointer; /* カーソルをポインタに変更（クリック可能に見せる） */
+  user-select: none; /* ユーザーによる選択を無効化 */
+  color: #ff8bb1; /* 矢印の色をピンクに設定 */
+  /* margin: 0 5px; 矢印の左右マージンを5pxに設定（現在はコメントアウト） */
+}
+
+/* サークルのスタイル */
+.circle {
+  background-color: #ffeef1; /* サークルの背景色を薄いピンクに設定 */
+  border-radius: 50%; /* サークルを丸くする */
+  padding: 5px; /* サークルの内側パディングを5pxに設定 */
+  display: flex; /* フレックスボックスを使用して子要素を配置 */
+  align-items: center; /* 子要素を水平中央に配置 */
+  justify-content: center; /* 子要素を垂直中央に配置 */
+  width: 300px; /* サークルの幅を300pxに設定 */
+  height: 300px; /* サークルの高さを300pxに設定 */
+}
+
+/* ファッション画像のスタイル */
+.fweminine-image {
+  width: 100%; /* 画像の幅を親要素の100%に設定 */
+  height: auto; /* 画像の高さを自動調整（アスペクト比を維持） */
+}
+
+/* タグコンテナのスタイル */
+.tag-container {
+  position: absolute; /* 相対位置を使用して、子要素の絶対位置を設定可能にする */
+  top: 425px;
+}
+
+/* タグ画像のスタイル */
+.tag-image {
+  width: 600px; /* 画像の幅を600pxに設定 */
+  height: 200px; /* 画像の高さを200pxに設定 */
+}
+
+/* タグテキストのスタイル */
+.tag-text {
+  position: absolute; /* 絶対位置を使用して、親要素内で位置を設定 */
+  margin-top: 15px; /* 上マージンを15pxに設定 */
+  top: 50%; /* 親要素の高さの50%に設定 */
+  left: 50%; /* 親要素の幅の50%に設定 */
+  transform: translate(-50%, -50%); /* 中央に配置するために50%ずつ移動 */
+  font-size: 1.2rem; /* フォントサイズを1.2remに設定 */
+  color: #fffbfc; /* テキストの色をピンクに設定 */
+  font-weight: bold; /* フォントを太字に設定 */
+  text-align: center; /* テキストを中央揃えに設定 */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* スタートボタンのスタイル */
+.start-button {
+  margin-top: 5px; /* 上マージンを5pxに設定 */
+  padding: 8px 64px; /* パディングを8pxと64pxに設定 */
+  font-size: 1rem; /* フォントサイズを1remに設定 */
+  background-color: #ff8bb1; /* ボタンの背景色をピンクに設定 */
+  color: white; /* ボタンテキストの色を白に設定 */
+  border: none; /* ボーダーをなくす */
+  /* border-radius: 10px; ボタンの丸みを10pxに設定（現在はコメントアウト） */
+  cursor: pointer; /* カーソルをポインタに変更（クリック可能に見せる） */
+  position: absolute;
+  top: 600px;
+}
+
+button:hover {
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25);
+    transform: translateY(-0.1875em);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* チェックボックスを非表示にする */
+.drawer_hidden {
+  display: none;
+}
+
+/* ハンバーガーアイコンの設置スペース */
+.drawer_open {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;/* 重なり順を一番上にする */
+  cursor: pointer;
+  position: absolute;
+  top: 3%;
+  right: 20px;
+  width: 30px; /* クリック範囲を広げる */
+  height: 30px; /* クリック範囲を広げる */
+}
+
+/* ハンバーガーメニューのアイコン */
+.drawer_open span,
+.drawer_open span:before,
+.drawer_open span:after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 25px;
+  border-radius: 3px;
+  background: rgb(50, 50, 50);
+  transition: 0.5s;
+  position: absolute;
+}
+
+/* 三本線の一番上の棒の位置調整 */
+.drawer_open span:before {
+  bottom: 8px;
+}
+
+/* 三本線の一番下の棒の位置調整 */
+.drawer_open span:after {
+  top: 8px;
+}
+
+/* アイコンがクリックされたら真ん中の線を透明にする */
+#drawer_input:checked ~ .drawer_open span {
+  background: rgba(255, 255, 255, 0);
+}
+
+/* アイコンがクリックされたらアイコンが×印になように上下の線を回転 */
+#drawer_input:checked ~ .drawer_open span::before {
+  bottom: 0;
+  transform: rotate(45deg);
+}
+
+#drawer_input:checked ~ .drawer_open span::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+  
+/* メニューのデザイン*/
+.nav_content {
+  width: 1500px;
+  height: 685px;
+  position: absolute;
+  bottom: 800px;
+  left: 0%; /* メニューを画面の外に飛ばす */
+  z-index: 99;
+  background-color: rgb(249, 235, 248);
+  transition: .5s;
+  text-align: center;
+  padding-top: 20px;
+}
+
+/* メニュー黒ポチを消す */
+.h-name-area {
+  display: flex;
+  justify-content: center;
+  height: 40%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.nav_item {
+  color: #0d0d0d;
+  text-decoration: none;
+  font-size: 25px;
+  height: 40%;
+  width: 50%;
+  margin: 40px 0 40px 0;
+  padding: 6%;
+}
+
+h4, p {
+  margin: 0;
+  padding: 0;
+}
+
+#k { background-color: rgb(224, 247, 254);}
+#t { background-color: rgb(243, 230, 255);}
+#m { background-color: rgb(234, 255, 230);}
+#w { background-color: #f7dbe5;}
+
+h1 {
+  font-size: 40px;
+}
+
+/* アイコンがクリックされたらメニューを表示 */
+#drawer_input:checked ~ .nav_content {
+  bottom: 0px;/* メニューを画面に入れる */
+  
+}
+
+.audio-button {
+  position: absolute;
+  top: 1%;
+  left: 2%;
+}
+
+#play-button {
+  height: 100px;
+  width: 100px;
+}
+
+.hover:hover {
+  transform: translateY(-0.1875em);
+}
+
+.hover:active {
+  transform: translateY(0);
+}
+
+.icon {
+  height: 100px;
+  width: 100px;
+  margin: -50px 0 0 0;
+}
