@@ -1,9 +1,7 @@
-// 画像のリストを定義します。ここには、表示したいすべての画像のファイル名を追加します。
-var images = ["./docs/img/top/fweminine.png", "./docs/img/top/sporty.png", "./docs/img/top/casual.png"];
-var texts = ['fwemininn', 'sporty', 'casual'];
+var images = ["./docs/img/top/fweminine.png", "./docs/img/top/casual.png"];
+var texts = ['fwemininn', 'casual'];
 var index = 0;
 
-// 左矢印がクリックされたときの動作を定義します。
 document.getElementById("left").addEventListener("click", function() {
     index--;
     if (index < 0) {
@@ -13,7 +11,6 @@ document.getElementById("left").addEventListener("click", function() {
     document.getElementById("tag").innerText = texts[index];
 });
 
-// 右矢印がクリックされたときの動作を定義します。
 document.getElementById("right").addEventListener("click", function() {
     index++;
     if (index >= images.length) {
@@ -30,13 +27,12 @@ document.querySelector(".start-button").addEventListener("click", function() {
             location.href = './fweminine.html';
             break;
         case 'sporty':
-            // Add more cases if needed
             break;
         case 'casual':
             location.href = './casual.html';
             break;
         default:
-            location.href = './index.html'; // Default fallback
+            location.href = './index.html';
             break;
     }
 });
